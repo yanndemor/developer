@@ -10,7 +10,7 @@ const NavBar = () => (
     {/*   <!-- Container wrapper --> */}
       <div className="container-fluid">
       <img src={reactLogo} alt="react logo" />
-      <h1>YannDemor DeveloPunk</h1>
+      <h1>The Web DeveloPunk</h1>
       <em></em>
        {/*  <!-- Collapsible wrapper --> */}
         <div className="collapse d-flex flex-row justify-content-end navbar-collapse" id="navbarSupportedContent">

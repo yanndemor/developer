@@ -1,6 +1,13 @@
+@font-face{
+  font-family:"Monster mech";
+  src:url("../../assets/fonts/monster_mech/Monster\ Mech.ttf");
+}
 h1{
   color: white;
-  font-size: 250%;
+  font-size: 200%;
+  font-family: "Monster mech";
+  text-align: center;
+  margin-left:4%;
 }
 .btn {
   padding: .45rem 1.5rem .35rem;
