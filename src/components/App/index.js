@@ -2,6 +2,7 @@
 import React from 'react';
 //import local
 import NavBar from 'src/components/NavBar'
+import Header from 'src/components/Header'
 // == Import
 
 import './styles.css';
@@ -11,7 +12,7 @@ const App = () => (
   <div className="app">
   <NavBar/>
     
-    <h1>Composant : App</h1>
+   <Header/> 
   </div>
 );
 
