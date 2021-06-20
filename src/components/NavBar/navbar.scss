@@ -1,0 +1,16 @@
+h1{
+  color: white;
+  font-size: 250%;
+}
+.btn {
+  padding: .45rem 1.5rem .35rem;
+  color: white;
+  border: 1px solid black;
+  background-color: rgba(36, 35, 35, 0.808);
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: rgb(166,27,21);
+  background: linear-gradient(153deg, rgba(166,27,21,1) 0%, rgba(1,0,18,1) 23%, rgba(1,13,84,1) 67%, rgba(9,48,224,1) 82%, rgba(0,46,255,1) 100%);
+}

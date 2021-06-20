@@ -1,14 +1,16 @@
 // == Import npm
 import React from 'react';
-
+//import local
+import NavBar from 'src/components/NavBar'
 // == Import
-import reactLogo from './react-logo.svg';
+
 import './styles.css';
 
 // == Composant
 const App = () => (
   <div className="app">
-    <img src={reactLogo} alt="react logo" />
+  <NavBar/>
+    
     <h1>Composant : App</h1>
   </div>
 );
