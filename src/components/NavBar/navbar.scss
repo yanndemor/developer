@@ -2,12 +2,38 @@
   font-family:"Monster mech";
   src:url("../../assets/fonts/monster_mech/Monster\ Mech.ttf");
 }
-h1{
-  color: white;
-  font-size: 200%;
+.navbar{
+  display:flex;
+  justify-content: space-around;
+
+.image-github{
+  width:15px;
+  margin: 0 5px;
+}
+.image-linkedin{
+ width:15px;
+ margin: 0 5px;
+}
+.title-nav{
+  color:white;
+  font-size: 1em;
   font-family: "Monster mech";
   text-align: center;
-  margin-left:4%;
+  /* margin-left:4%; */
+}
+
+.burger{
+  background-color:black;
+  font-weight:bold;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+.navbar-brand {
+  &:hover{
+    text-decoration: underline;
+  }
+ 
 }
 .btn {
   padding: .45rem 1.5rem .35rem;
@@ -15,9 +41,52 @@ h1{
   border: 1px solid black;
   background-color: rgba(36, 35, 35, 0.808);
 }
-
+}
 .gradient-custom {
   /* fallback for old browsers */
   background: rgb(166,27,21);
   background: linear-gradient(153deg, rgba(166,27,21,1) 0%, rgba(1,0,18,1) 23%, rgba(1,13,84,1) 67%, rgba(9,48,224,1) 82%, rgba(0,46,255,1) 100%);
+}
+@media(max-width:300px){
+  .image-react{
+    width:30px;
+    height:auto;
+  }
+  .navbar .title-nav{
+   
+    font-size: 0.6em;
+    
+  }
+  
+.burger{
+  width: 45px;
+  height:auto;
+}
+.navbar-toggler-icon{
+  width:22px;
+}
+}
+@media(min-width:992px){
+  
+  .navbar .title-nav{
+   
+    font-size: 2em;
+    
+  }
+  .image-react {
+    width: 225px;
+    height: auto;
+}
+}
+@media(min-width:768px){
+  .image-react{
+    width:210px;
+    height:auto;
+  }
+  .navbar .title-nav{
+   
+    font-size: 1em;
+    
+  }
+  
 }

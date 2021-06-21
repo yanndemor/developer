@@ -1,6 +1,7 @@
 import React from 'react';
 //import local
 import Particles from "react-tsparticles"
+import reactLogo from 'src/components/App/react-logo.svg';
 // == Import
 
 import './header.scss';
@@ -10,7 +11,16 @@ const Header = () => {
   let randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
   return(
 <div className="header">
-    <Particles className id="tsparticles"
+
+    <div className="container-fluid">
+    <img className="image-react" src={reactLogo} alt="react logo" />
+        
+          <h1 className="title-header">Web Developer Specialized with REACT</h1>
+        
+     
+    </div>
+    
+    <Particles id="tsparticles"
         options={{
           
           fpsLimit: 60,
@@ -45,12 +55,12 @@ const Header = () => {
           },
           particles: {
             color: {
-              value: randomColor,
-              random: true,
+              value: "rgb(232,42,225)",
+             
 
             },
             links: {
-              color: "#2600ff",
+              color: "rgb(42,225,232)",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -64,15 +74,15 @@ const Header = () => {
               enable: true,
               outMode: "bounce",
               random: false,
-              speed: 3,
+              speed: 1,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                value_area: 800,
+                value_area: 500,
               },
-              value: 80,
+              value: 100,
             },
             opacity: {
               value: 0.5,

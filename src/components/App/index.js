@@ -3,17 +3,23 @@ import React from 'react';
 //import local
 import NavBar from 'src/components/NavBar'
 import Header from 'src/components/Header'
+import { BrowserRouter as Router } from 'react-router-dom';
 // == Import
 
 import './styles.css';
 
 // == Composant
 const App = () => (
-  <div className="app">
-  <NavBar/>
-    
-   <Header/> 
-  </div>
+  
+   <div className="app">
+    <Router>
+      <NavBar/>
+        
+      <Header/> 
+    </Router> 
+  </div> 
+ 
+  
 );
 
 // == Export
