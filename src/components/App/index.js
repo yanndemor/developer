@@ -1,8 +1,9 @@
 // == Import npm
 import React from 'react';
 //import local
-import NavBar from 'src/components/NavBar'
-import Header from 'src/components/Header'
+import NavBar from 'src/components/NavBar';
+import Header from 'src/components/Header';
+import Page from 'src/components/Page';
 import { BrowserRouter as Router } from 'react-router-dom';
 // == Import
 
@@ -16,6 +17,7 @@ const App = () => (
       <NavBar/>
         
       <Header/> 
+      <Page />
     </Router> 
   </div> 
  
