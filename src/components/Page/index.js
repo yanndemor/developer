@@ -1,13 +1,28 @@
 import React from 'react';
-
+import LoadingSpinner from 'src/components/LoadingSpinner';
+import ApiGithub from 'src/containers/ApiGithub';
 import {
   Switch,
   Route,
   Redirect,
 } from 'react-router-dom';
 
-const Page = ()=> (
+const Page = ({ loading }) => (
+  <div className="page">
+    <div className="page-content">
+      <Switch>
 
-  <h2>hello</h2>
+        <Route path="/ApiGithub">
+          {loading && <LoadingSpinner />}
+          {!loading && (
+          <div>
+            <ApiGithub />
+          </div>
+          )}
+        </Route>
+
+      </Switch>
+    </div>
+  </div>
 );
 export default Page;

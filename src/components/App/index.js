@@ -1,9 +1,9 @@
 // == Import npm
 import React from 'react';
-//import local
+// import local
 import NavBar from 'src/components/NavBar';
 import Header from 'src/components/Header';
-import Page from 'src/components/Page';
+import Page from 'src/containers/Page';
 import { BrowserRouter as Router } from 'react-router-dom';
 // == Import
 
@@ -11,17 +11,16 @@ import './styles.css';
 
 // == Composant
 const App = () => (
-  
-   <div className="app">
+
+  <div className="app">
     <Router>
-      <NavBar/>
-        
-      <Header/> 
+      <NavBar />
+
+      <Header />
       <Page />
-    </Router> 
-  </div> 
- 
-  
+    </Router>
+  </div>
+
 );
 
 // == Export
