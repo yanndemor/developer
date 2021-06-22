@@ -1,10 +1,11 @@
 /* import of the action type */
-import { SAVE_REPOS, /* SHOW_CATEGORIE  */} from 'src/actions/github';
+import { SAVE_REPOS, UPDATE_USER_FIELD } from 'src/actions/github';
 
 const initialState = {
-  
-  githubList: [],
 
+  githubList: [],
+  userGithub: '',
+  
   loading: true,
 };
 
@@ -15,6 +16,12 @@ function githubReducer(state = initialState, action) {
         ...state,
         githubList: action.loadedRepos,
         loading: false,
+      };
+    case UPDATE_USER_FIELD:
+
+      return {
+        ...state,
+        userGithub: action.newValue,
       };
 
     default:

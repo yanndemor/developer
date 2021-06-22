@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+.container-input{
+  margin: vars.$gutter;
+  background-color: white;
+  padding:vars.$gutter;
+  border: vars.$border;
+  border-radius: vars.$border-radius;
+  .input{
+   width:100%;
+  }
+  #input-search{
+    width:100%;
+    height: 2rem;
+  }
+}

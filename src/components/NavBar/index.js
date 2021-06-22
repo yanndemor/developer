@@ -1,6 +1,5 @@
 import React from 'react';
 // import yarn
-import reactLogo from 'src/components/App/react-logo.svg';
 import './navbar.scss';
 // import Local
 import github from 'src/assets/images/githubWhite.svg';
@@ -8,7 +7,7 @@ import linkedIn from 'src/assets/images/linkedinWhite.svg';
 // import librairies
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import { NavLink } from 'react-router-dom';
 // == Composant
 const NavBar = () => (
@@ -26,7 +25,7 @@ const NavBar = () => (
             <img className="image-linkedin" src={linkedIn} alt="logo linkedin" />
           </a>
         </div>
-        <h1 className="title-nav">YannDev Porte-Folio</h1>
+        <h1 className="title-nav">YannDev PortFolio</h1>
 
         <Navbar.Toggle className="burger ml-auto " backgroud-color="white-bold" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon navbar-dark" />
