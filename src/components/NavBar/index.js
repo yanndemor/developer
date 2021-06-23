@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom';
 // == Composant
 const NavBar = () => (
 
-  <div className="container-fluid'">
+  <div className="container-fluid px-0 ">
     <Navbar className="gradient-custom" expand="lg" variant="dark">
 
       <div className="container-fluid navbar">
@@ -31,7 +31,13 @@ const NavBar = () => (
           <span className="navbar-toggler-icon navbar-dark" />
         </Navbar.Toggle>
 
-        <Navbar.Collapse id="navbarNavAltMarkup" className="justify-content-end">
+        <Navbar.Collapse id="navbarNavAltMarkup" className="justify-content-end burger-menu">
+          <Nav className="mr-auto">
+            <NavLink to="/" className="navbar-brand" exact>Home</NavLink>
+          </Nav>
+          <Nav className="mr-auto">
+            <NavLink to="/competences" className="navbar-brand" exact>Skills</NavLink>
+          </Nav>
           <Nav className="mr-auto">
             <NavLink to="/ApiGithub" className="navbar-brand" exact>Application Github</NavLink>
           </Nav>

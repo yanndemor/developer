@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Card, Icon, Image } from 'semantic-ui-react';
+import './repos.scss';
 
 const Repos = ({
 
@@ -11,7 +12,7 @@ const Repos = ({
   owner,
   html_url,
 }) => (
-  <div>
+  <div className="single-card">
     <a href={html_url} className="repo">
       <Card>
         <Image src={owner.avatar_url} wrapped ui={false} />

@@ -14,15 +14,19 @@ const ApiGithub = ({
 
   githubList,
 }) => (
-  <Card.Group itemsPerRow={3}>
-    {githubList.map((repos) => (
-      <Repos
-        key={repos.id}
-        {...repos}
-      />
-    ))}
-  </Card.Group>
-
+  <>
+    
+    <div className="container-repos">
+      <Card.Group id="card-row" itemsPerRow={2}>
+        {githubList.map((repos) => (
+          <Repos
+            key={repos.id}
+            {...repos}
+          />
+        ))}
+      </Card.Group>
+    </div>
+  </>
 );
 
 ApiGithub.propTypes = {

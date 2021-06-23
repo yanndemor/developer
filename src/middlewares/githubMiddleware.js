@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { FETCH_REPOS, saveRepos } from 'src/actions/github';
+import { FETCH_REPOS, FETCH_RESULTS, saveRepos, totalRepos, nbrRepos, saveNewRepos, clearGithubList } from 'src/actions/github';
 
 // const API_URL = 'http://ec2-3-85-110-30.compute-1.amazonaws.com/apo-OnTheSpot-back/public/api';
 const API_URL = 'https://api.github.com/search';
@@ -13,11 +13,31 @@ const githubMiddleware = (store) => (next) => (action) => {
 
     case FETCH_REPOS: {
       const { userGithub } = store.getState().github;
-      axios.get(`${API_URL}/repositories?q=${userGithub}`)
+      axios.get(`${API_URL}/repositories?q=${userGithub}&sort=stars&order=desc&page=1&per_page=9`)
         .then((response) => {
-          // console.log('response: ', response);
+           console.log('response 1: ', response);
           // action creator to save the categories!
           store.dispatch(saveRepos(response.data.items));
+          store.dispatch(totalRepos(response.data.total_count));
+          store.dispatch(nbrRepos(response.data.total_count));
+        })
+        .catch((error) => {
+        /*   console.log('error:', error); */
+        });
+
+      next(action);
+      break;
+    }
+    case FETCH_RESULTS: {
+      const { userGithub } = store.getState().github;
+      const { githubList } = store.getState().github;
+  
+      axios.get(`${API_URL}/repositories?q=${userGithub}&sort=stars&order=desc&page=${(githubList.length / 9) + 1}&per_page=9`)
+        .then((response) => {
+           console.log('response: ', response);
+          // action creator to save the categories!
+          /* store.dispatch(clearGithubList()); */
+          store.dispatch(saveNewRepos(response.data.items));
         })
         .catch((error) => {
         /*   console.log('error:', error); */

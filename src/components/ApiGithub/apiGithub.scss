@@ -1,6 +1,15 @@
 @use 'src/styles/vars';
+
 .container-repos{
+ 
 
-
-  padding: 0 vars.$gutter;
+  margin: 0 vars.$gutter;
+  #card-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: vars.$gutter;
+    margin-left:0px;
+    margin-right:0px;
+    
+  }
 }

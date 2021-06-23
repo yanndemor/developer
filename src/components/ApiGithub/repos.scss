@@ -1,0 +1,6 @@
+@use 'src/styles/vars';
+.single-card{
+  margin-bottom: vars.$gutter;
+  height:20%;
+  width: auto;
+}

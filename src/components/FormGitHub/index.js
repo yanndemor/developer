@@ -24,17 +24,20 @@ const FormGitHub = ({ manageSubmit, value, changeField }) => {
   // en indiquant le nom de la variable
 
   return (
-    <div className="container-input">
-      <form className="input" onSubmit={handleSubmit}>
-        <Field
-          type="text"
-          id="input-search"
-          placeholder="Search..."
-          manageChange={changeField}
-          value={value}
-        />
-      </form>
-    </div>
+    <>
+      <h2><em>"</em>Reach the repo Github You are looking for<em>"</em></h2>
+      <div className="container-input">
+        <form className="input" onSubmit={handleSubmit}>
+          <Field
+            type="text"
+            id="input-search"
+            placeholder="Search..."
+            manageChange={changeField}
+            value={value}
+          />
+        </form>
+      </div>
+    </>
   );
 };
 

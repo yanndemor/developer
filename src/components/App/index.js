@@ -14,10 +14,15 @@ const App = () => (
 
   <div className="app">
     <Router>
-      <NavBar />
-
-      <Header />
-      <Page />
+      <div className="menu">
+        <NavBar />
+      </div>
+      <div className="header">
+        <Header />
+      </div>
+      <div className="pages">
+        <Page />
+      </div>
     </Router>
   </div>
 

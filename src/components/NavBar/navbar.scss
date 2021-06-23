@@ -2,10 +2,11 @@
   font-family:"Monster mech";
   src:url("../../assets/fonts/monster_mech/Monster\ Mech.ttf");
 }
+
 .navbar{
   display:flex;
   justify-content: space-around;
-
+ 
 .image-github{
   width:15px;
   margin: 0 5px;
@@ -25,7 +26,12 @@
 .burger{
   background-color:black;
   font-weight:bold;
+  
 }
+.burger-menu{
+    background:blue;
+    text-align:right;
+  }
 .navbar-collapse{
   flex-grow: 0;
 }
@@ -45,7 +51,8 @@
 .gradient-custom {
   /* fallback for old browsers */
   background: rgb(166,27,21);
-  background: linear-gradient(153deg, rgba(166,27,21,1) 0%, rgba(1,0,18,1) 23%, rgba(1,13,84,1) 67%, rgba(9,48,224,1) 82%, rgba(0,46,255,1) 100%);
+  background: linear-gradient(153deg, rgba(0,46,255,0.7) 0%, rgba(9,48,224,0.7) 15%, rgba(1,0,18,0.7) 40%, rgba(1,0,18,0.7) 60%, rgba(9,48,224,0.7) 83%, rgba(0,46,255,0.7) 100%);
+  
 }
 @media(max-width:300px){
   .image-react{
@@ -77,6 +84,7 @@
     width: 225px;
     height: auto;
 }
+
 }
 @media(min-width:768px){
   .image-react{
@@ -88,5 +96,6 @@
     font-size: 1em;
     
   }
+  
   
 }

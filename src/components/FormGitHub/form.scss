@@ -1,4 +1,8 @@
 @use 'src/styles/vars';
+h2{
+text-align:center;
+font-size: 4em;
+}
 .container-input{
   margin: vars.$gutter;
   background-color: white;
