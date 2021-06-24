@@ -1,6 +1,6 @@
 import React from 'react';
-//import local
-import Particles from "react-tsparticles"
+// import local
+import Particles from 'react-tsparticles';
 import reactLogo from 'src/components/App/react-logo.svg';
 // == Import
 
@@ -8,32 +8,32 @@ import './header.scss';
 
 // == Composant
 const Header = () => {
-  let randomColor = "#"+((1<<24)*Math.random()|0).toString(16); 
-  return(
-<div className="header">
+  const randomColor = `#${((1 << 24) * Math.random() | 0).toString(16)}`;
+  return (
+    <div className="header">
 
-    <div className="container-fluid">
-    <img className="image-react" src={reactLogo} alt="react logo" />
-        
-          <h1 className="title-header">Web Developer Specialized with REACT</h1>
-        
-     
-    </div>
-    
-    <Particles id="tsparticles"
+      <div className="container-fluid">
+        <img className="image-react" src={reactLogo} alt="react logo" />
+
+        <h1 className="title-header">Web Developer Specialized with REACT</h1>
+
+      </div>
+
+      <Particles
+        id="tsparticles"
         options={{
-          
+
           fpsLimit: 60,
           interactivity: {
-            detectsOn: "canvas",
+            detectsOn: 'canvas',
             events: {
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: 'push',
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: 'repulse',
               },
               resize: true,
             },
@@ -55,12 +55,11 @@ const Header = () => {
           },
           particles: {
             color: {
-              value: "rgb(232,42,225)",
-             
+              value: 'rgb(232,42,225)',
 
             },
             links: {
-              color: "rgb(42,225,232)",
+              color: 'rgb(42,225,232)',
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -70,9 +69,9 @@ const Header = () => {
               enable: true,
             },
             move: {
-              direction: "none",
+              direction: 'none',
               enable: true,
-              outMode: "bounce",
+              outMode: 'bounce',
               random: false,
               speed: 1,
               straight: false,
@@ -88,7 +87,7 @@ const Header = () => {
               value: 0.5,
             },
             shape: {
-              type: "circle",
+              type: 'circle',
             },
             size: {
               random: true,
@@ -97,12 +96,11 @@ const Header = () => {
           },
           detectRetina: true,
         }}
-
-        />
-  </div>
-  )
+      />
+    </div>
+  );
 }
-  
+
 ;
 
 // == Export

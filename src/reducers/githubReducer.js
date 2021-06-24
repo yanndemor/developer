@@ -8,8 +8,8 @@ const initialState = {
   githubList: [],
   userGithub: '',
   totalRepos: 0,
-  nbRepos: 0,
-  loading: true,
+  nbrRepos: 0,
+  loading: false,
  
 };
 
@@ -33,6 +33,7 @@ function githubReducer(state = initialState, action) {
       return {
         ...state,
         totalRepos: action.totalRepos,
+        nbrRepos: action.totalRepos,
       };
     case CLEAR_GITHUB_LIST:
       return {

@@ -4,6 +4,7 @@ import LoadingSpinner from 'src/components/LoadingSpinner';
 import ApiGithub from 'src/containers/ApiGithub';
 import FormGitHub from 'src/containers/FormGitHub';
 import MoreResults from 'src/containers/MoreResults';
+import Counter from 'src/containers/Counter';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import {
   Switch,
@@ -17,10 +18,10 @@ const Page = ({ loading, totalRepos, githubList }) => (
       <Switch>
 
         <Route path="/ApiGithub">
-          {/*  {loading && <LoadingSpinner />}
-          {!loading && ( */}
+          
           <div>
             <FormGitHub />
+            <Counter />
             <ApiGithub />
             {githubList.length !== totalRepos && (
             <MoreResults />

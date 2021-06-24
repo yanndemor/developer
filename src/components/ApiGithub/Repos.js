@@ -13,7 +13,7 @@ const Repos = ({
   html_url,
 }) => (
   <div className="single-card">
-    <a href={html_url} className="repo">
+    <a href={html_url} target="_blank" rel="noreferrer" className="repo">
       <Card>
         <Image src={owner.avatar_url} wrapped ui={false} />
         <Card.Content>
