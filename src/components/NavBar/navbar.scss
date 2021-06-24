@@ -6,15 +6,35 @@
 .navbar{
   display:flex;
   justify-content: space-around;
- 
-.image-github{
-  width:15px;
+  line-height:1em;
+.image-header{
+  display:flex;
+  flex-direction:column;
+
+  .image-github{
+  width:15%;
   margin: 0 5px;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 .image-linkedin{
- width:15px;
+ width:15%;
  margin: 0 5px;
+ &:hover{
+  text-decoration: underline;
 }
+}
+.account{
+ color:white;
+ font-style: italic;
+ font-size: 0.8em;
+ &:hover{
+  text-decoration: underline;
+}
+} 
+} 
+
 .title-nav{
   color:white;
   font-size: 1em;

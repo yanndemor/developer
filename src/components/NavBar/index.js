@@ -18,12 +18,21 @@ const NavBar = () => (
       <div className="container-fluid navbar">
 
         <div className="image-header">
-          <a href="https://github.com/yanndemor/">
-            <img className="image-github" src={github} alt="logo github" />
-          </a>
-          <a href="https://www.linkedin.com/in/yann-demor">
-            <img className="image-linkedin" src={linkedIn} alt="logo linkedin" />
-          </a>
+          <div>
+
+            <a href="https://github.com/yanndemor/" target="_blank" rel="noreferrer" tool-tips="It's Sample tooltip">
+              <img className="image-github" src={github} alt="logo github" />
+              <em className="account">GitHub Account</em>
+            </a>
+
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/yann-demor" target="_blank" rel="noreferrer">
+              <img className="image-linkedin" src={linkedIn} alt="logo linkedin" />
+              <em className="account">LinkedIn Account</em>
+            </a>
+          </div>
+
         </div>
         <h1 className="title-nav">YannDev PortFolio</h1>
 
