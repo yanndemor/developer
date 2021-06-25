@@ -72,6 +72,10 @@
   /* fallback for old browsers */
   background: rgb(166,27,21);
   background: linear-gradient(153deg, rgba(0,46,255,0.7) 0%, rgba(9,48,224,0.7) 15%, rgba(1,0,18,0.7) 40%, rgba(1,0,18,0.7) 60%, rgba(9,48,224,0.7) 83%, rgba(0,46,255,0.7) 100%);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.0px );
+  -webkit-backdrop-filter: blur( 0.0px );
+
   
 }
 @media(max-width:300px){

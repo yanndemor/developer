@@ -2,7 +2,7 @@
 .image{
   display:flex;
   justify-content:center;
-  margin: 2em 0;
+ 
   
   img{
     border: vars.$border;
@@ -10,11 +10,14 @@
   }
 }
 .description-github{
-  .p{
-  text-align:center;
+  margin-bottom: 5%;
+  
+  .paragraphe-description{
+  line-height:vars.$line-height;
+  text-align:justify;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
-  
+   
 }
   .description{
     font-weight: bold;
@@ -26,20 +29,25 @@
 
 .block-presentation-github{
   
-  margin: 2% 0;
-
+  margin: 5% 0;
+.block-description{
+  margin: 5% 0 10% 0;
  h3{
-text-align:center;
-font-size: 4em;
+  margin:3rem 0;
+  text-align:justify;
+  font-size: 4em;
 }
+
 .github-guillemet2{
   display: flex;
   justify-content: flex-end;
-} 
+}  
+}
+ 
 }
 
 .container-input{
-  margin: vars.$gutter;
+  margin-bottom: vars.$gutter;
   background-color: white;
   padding:vars.$gutter;
   border: vars.$border;

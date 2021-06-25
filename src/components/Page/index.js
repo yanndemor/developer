@@ -5,6 +5,7 @@ import ApiGithub from 'src/containers/ApiGithub';
 import FormGitHub from 'src/containers/FormGitHub';
 import MoreResults from 'src/containers/MoreResults';
 import Counter from 'src/containers/Counter';
+import Home from 'src/components/Home';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import {
   Switch,
@@ -17,7 +18,7 @@ const Page = ({ loading, totalRepos, githubList }) => (
     <div className="page-content">
       <Switch>
 
-        <Route path="/ApiGithub">
+        <Route path="/ApiGithub" exact>
           
           <div>
             <FormGitHub />
@@ -29,7 +30,11 @@ const Page = ({ loading, totalRepos, githubList }) => (
           </div>
           {/*  )} */}
         </Route>
-
+        <Route path="/" exact>
+          <div>
+            <Home />
+          </div>
+        </Route>
       </Switch>
     </div>
   </div>

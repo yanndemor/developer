@@ -15,7 +15,7 @@ const githubMiddleware = (store) => (next) => (action) => {
       const { userGithub } = store.getState().github;
       axios.get(`${API_URL}/repositories?q=${userGithub}&sort=stars&order=desc&page=1&per_page=9`)
         .then((response) => {
-           console.log('response 1: ', response);
+           console.log('response: ', response);
           // action creator to save the categories!
           store.dispatch(saveRepos(response.data.items));
           store.dispatch(totalRepos(response.data.total_count));

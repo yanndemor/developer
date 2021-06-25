@@ -17,21 +17,26 @@ const FormGitHub = ({ manageSubmit, value, changeField }) => {
     <>
 
       <div className="block-presentation-github">
-        <img className="github-guillemet1" src={guillemet1} alt="react logo" />
-        <h3>Reach the repo Github You are looking for</h3>
-        <div className="github-guillemet2">
-          <img src={guillemet2} alt="react logo" />
-        </div>
         <div className="image">
           <div>
             <img src={githubLogo} alt="logo-react" />
           </div>
         </div>
+        <div className="block-description">
+          <img className="github-guillemet1" src={guillemet1} alt="react logo" />
+          <h3>Reach the repo Github You are looking for</h3>
+          <div className="github-guillemet2">
+            <img src={guillemet2} alt="react logo" />
+          </div>
+        </div>
+
       </div>
       <div className="description-github">
-      <h4 className="description">Description:</h4>
-        <p>In this project, I have used an API request on Github, permitting to collect all public repositories regarding
-          le technologies you entered in the Input below! This projet is produced using the library javascript React and
+        <h4 className="description">Description:</h4>
+        <p className="paragraphe-description">In this project, I have used an API request on Github, permitting to collect all publics repositories regarding
+          the technologies or subject related to your keyword you submitted in the Input bar below!
+        </p>
+        <p> This projet is produced using the library javascript React and
           Redux to manage the request API and the datas to the differents React components!
         </p>
       </div>
