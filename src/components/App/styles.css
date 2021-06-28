@@ -1,4 +1,21 @@
+.app{
+margin:0;
+padding: 0;
+box-sizing:boder-box;
+height: 100%;
+width:100%;
+background:linear-gradient(-45deg, #6fc7b5 0%, #13bdce 20%, #0094d9 40%, #5a3694 60%, #ee4d74 80%, #f58c58 100%);
+/* background-position: 0% 100%;
+background-size:600%; */
 
+/* animation: bg 20s linear infinite;
+ */
+}
+/* @keyframes bg {
+  50% {
+    background-position: 100% 0%;
+  }
+} */
 .header{
   position:relative;
   z-index:0;

@@ -13,9 +13,10 @@ import './apiGithub.scss';
 const ApiGithub = ({
 
   githubList,
-}) => (
-  <>
-    
+}) => {
+ 
+    if (githubList !== []){
+      return (
     <div className="container-repos">
       <Card.Group id="card-row" itemsPerRow={2}>
         {githubList.map((repos) => (
@@ -25,9 +26,10 @@ const ApiGithub = ({
           />
         ))}
       </Card.Group>
-    </div>
-  </>
-);
+    </div>);
+    };
+  
+};
 
 ApiGithub.propTypes = {
   // tableau d'objets

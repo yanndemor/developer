@@ -5,8 +5,12 @@
  
   
   img{
-    border: vars.$border;
+   /*  border: vars.$border; */
   border-radius: vars.$border-radius;
+  background-color:rgba(197, 197, 211, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  backdrop-filter: blur( 4.5px ); 
+    -webkit-backdrop-filter: blur( 4.5px ); 
   }
 }
 .description-github{
@@ -34,7 +38,7 @@
   margin: 5% 0 10% 0;
  h3{
   margin:3rem 0;
-  text-align:justify;
+  text-align:center;
   font-size: 4em;
 }
 

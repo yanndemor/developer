@@ -4,9 +4,14 @@
 }
 
 .navbar{
+  position:relative;
   display:flex;
   justify-content: space-around;
   line-height:1em;
+  vertical-align:center;
+  padding-top: 5px;
+  padding-bottom:5px;
+
 .image-header{
   display:flex;
   flex-direction:column;
@@ -18,6 +23,7 @@
     text-decoration: underline;
   }
 }
+
 .image-linkedin{
  width:15%;
  margin: 0 5px;
@@ -26,6 +32,7 @@
 }
 }
 .account{
+  
  color:white;
  font-style: italic;
  font-size: 0.8em;
@@ -34,8 +41,20 @@
 }
 } 
 } 
+.image-moi{
+  
+  #image-moi{
+  position:absolute;
+  left:8%;
+  top:7%;
+  height:5vh;
+  width:auto;
+  
+}
+}
 
 .title-nav{
+  
   color:white;
   font-size: 1em;
   font-family: "Monster mech";
@@ -49,8 +68,9 @@
   
 }
 .burger-menu{
-    background:blue;
+    background:rgba(2, 2, 2, 0.274);
     text-align:right;
+   padding:1%;
   }
 .navbar-collapse{
   flex-grow: 0;
@@ -70,9 +90,10 @@
 }
 .gradient-custom {
   /* fallback for old browsers */
-  background: rgb(166,27,21);
-  background: linear-gradient(153deg, rgba(0,46,255,0.7) 0%, rgba(9,48,224,0.7) 15%, rgba(1,0,18,0.7) 40%, rgba(1,0,18,0.7) 60%, rgba(9,48,224,0.7) 83%, rgba(0,46,255,0.7) 100%);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+/*   background: rgb(166,27,21); */
+  /* background: linear-gradient(153deg, rgba(0,46,255,0.7) 0%, rgba(9,48,224,0.7) 15%, rgba(1,0,18,0.7) 40%, rgba(1,0,18,0.7) 60%, rgba(9,48,224,0.7) 83%, rgba(0,46,255,0.7) 100%); */
+/*   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+background:rgba(2, 2, 2, 0.548);
   backdrop-filter: blur( 0.0px );
   -webkit-backdrop-filter: blur( 0.0px );
 

@@ -1,9 +1,14 @@
 @use 'src/styles/vars';
 
 .container-repos{
- 
+  border-radius: vars.$border-radius;
+  background-color:rgba(197, 197, 211, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  backdrop-filter: blur( 4.5px ); 
+    -webkit-backdrop-filter: blur( 4.5px ); 
 
-  margin: 0 vars.$gutter;
+ /*  margin: 0 vars.$gutter;
+  padding: vars.$gutter; */
   #card-row{
     display: flex;
     justify-content: space-between;

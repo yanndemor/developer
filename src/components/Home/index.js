@@ -5,6 +5,8 @@ import { Card, Icon, Image, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import envolee from 'src/assets/images/image-envolee.png';
 import onthespot from 'src/assets/images/image-onthespot.png';
+import arrowL from 'src/assets/images/arrow-left.drawio.png';
+import arrowLong from 'src/assets/images/arrowLong-right.drawio.png';
 import './home.scss';
 const Home = ({ }) => {
 
@@ -19,9 +21,15 @@ const Home = ({ }) => {
           </h2>
         </div>
       </div>
-<Divider />
+      <div className="divider">
+        <Divider />
+      </div>
+       <div className="block-story">
+          <h2 className="the-story">My_Dev_Story</h2>
+        </div>
       <div className="block-card">
-        <div>
+        
+        <div className="block-project">
           <a href="https://www.envoleeverticale.fr/accueil/" target="_blank" rel="noreferrer" >
             <Card className="card-div">
               <Image src={envolee} wrapped ui={false} />
@@ -44,7 +52,10 @@ const Home = ({ }) => {
           </a>
         </div>
 
-        <div>
+       {/*  <div id="arrow-one">
+          <img src={arrowL} alt="arrow" />
+        </div> */}
+        <div className="block-project">
           <a href="https://onthespot.link/" target="_blank" rel="noreferrer">
             <Card className="card-div">
               <Image src={onthespot} wrapped ui={false} />
@@ -60,16 +71,16 @@ const Home = ({ }) => {
                     <li>Projet réalisé à partir d'une idée vers la mise en production</li>
                     <span className="technos">=&gt; React/Redux + Symfony</span>
                   </ul>
-                  
-                  <br/>
-
                 </Card.Description>
               </Card.Content>
             </Card>
           </a>
+        </div>{/* 
+        <div id="arrow-two">
+          <img src={arrowLong} alt="arrow" />
         </div>
-
-        <div>
+ */}
+        <div className="block-project">
         <Link to="/ApiGithub">
           <Card className="card-div">
             <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />

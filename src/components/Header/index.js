@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container-fluid">
         <img className="image-react" src={reactLogo} alt="react logo" />
 
-        <h1 className="title-header">Web Developer Specialized with REACT</h1>
+        <h1 className="title-header">Web Developer Specialized In REACT</h1>
 
       </div>
 

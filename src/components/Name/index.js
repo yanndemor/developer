@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components'
 
 export default function Name(){
 
-  const reactName = "Yann_developper_Web_Junior".split("");
+  const reactName = "Yann_developper_Web_Junior_Story".split("");
 
   return <Wrapper>{reactName.map((item, index) => (
     <span key={index}>{item}</span>
@@ -108,5 +108,22 @@ const Wrapper = styled.span`
   span:nth-child(26) {
     animation-delay:2.6s
   } 
-
+  span:nth-child(27) {
+    animation-delay:2.7s
+  } 
+  span:nth-child(28) {
+    animation-delay:2.8s
+  } 
+  span:nth-child(29) {
+    animation-delay:2.9s
+  } 
+  span:nth-child(30) {
+    animation-delay:3s
+  } 
+  span:nth-child(31) {
+    animation-delay:3.1s
+  } 
+  span:nth-child(32) {
+    animation-delay:3.2s
+  } 
 `

@@ -7,7 +7,7 @@ import linkedIn from 'src/assets/images/linkedinWhite.svg';
 // import librairies
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-
+import picture from 'src/assets/images/image-moi.png'
 import { NavLink } from 'react-router-dom';
 // == Composant
 const NavBar = () => (
@@ -32,9 +32,17 @@ const NavBar = () => (
               <em className="account">LinkedIn Account</em>
             </a>
           </div>
-
+          
         </div>
-        <h1 className="title-nav">YannDev PortFolio</h1>
+        <div className="image-moi">
+          <img  id="image-moi" src={picture} alt="image de moi" />
+        </div>
+        
+        <div>
+        
+          <h1 className="title-nav">YannDev PortFolio</h1>
+        </div>
+        
 
         <Navbar.Toggle className="burger ml-auto " backgroud-color="white-bold" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon navbar-dark" />
@@ -43,6 +51,9 @@ const NavBar = () => (
         <Navbar.Collapse id="navbarNavAltMarkup" className="justify-content-end burger-menu">
           <Nav className="mr-auto">
             <NavLink to="/" className="navbar-brand" exact>Home</NavLink>
+          </Nav>
+          <Nav className="mr-auto">
+            <NavLink to="/contact" className="navbar-brand" exact>Contact</NavLink>
           </Nav>
           <Nav className="mr-auto">
             <NavLink to="/competences" className="navbar-brand" exact>Skills</NavLink>
