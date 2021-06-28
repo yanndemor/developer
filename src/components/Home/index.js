@@ -5,6 +5,7 @@ import { Card, Icon, Image, Divider } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import envolee from 'src/assets/images/image-envolee.png';
 import onthespot from 'src/assets/images/image-onthespot.png';
+import github from 'src/assets/images/image-githubApp.drawio.png';
 import arrowL from 'src/assets/images/arrow-left.drawio.png';
 import arrowLong from 'src/assets/images/arrowLong-right.drawio.png';
 import './home.scss';
@@ -36,16 +37,17 @@ const Home = ({ }) => {
               <Card.Content >
                 <Card.Header>Envolée Verticale</Card.Header>
                 <Card.Meta>
-                  <span className='date'>Avril 2021</span>
+                  <span className='date'>Avril 2020</span>
                 </Card.Meta>
                 <Card.Description>
-                  <span className="title-card">1ére introduction à la réalisation de site web</span><br/>
+                  <span className="title-card">First Introduction to the website production</span><br/>
                     <ul>
-                      <li>Site Vitrine réalisé avec wordpress</li>
-                      <li>Rédaction du cahier des charges avec le client</li>
-                      <li>développement et mise en production</li>
+                      <li>Showcase site with CMS Wordpress</li>
+                      <li>Production of the specification requirements with the client</li>
+                      <li>Development and deployment</li>
                     </ul>
-                  <span className="technos">=&gt;  Wordpress + Elementor</span>
+                    <br/>
+                  <span className="technos">Technos =&gt;  Wordpress + Elementor</span>
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -62,15 +64,18 @@ const Home = ({ }) => {
               <Card.Content>
                 <Card.Header>OnTheSpot</Card.Header>
                 <Card.Meta>
-                  <span className='date'>April 2020</span>
+                  <span className='date'>April 2021</span>
                 </Card.Meta>
                 <Card.Description>
-                  <span className="title-card">Projet de fin de formation</span><br/>
+                  <span className="title-card">End of Training Project</span><br/>
                   <ul>
-                    <li>Equipe de 5 developpers</li>
-                    <li>Projet réalisé à partir d'une idée vers la mise en production</li>
-                    <span className="technos">=&gt; React/Redux + Symfony</span>
+                    <li>Team of 5 developers</li>
+                    <li>Project realised from an idea to the deployment step</li>
+                    <li>Methodology used: AGILE</li>
                   </ul>
+                    <br/>
+                    <span className="technos">Technos =&gt; React/Redux + Symfony</span>
+                  
                 </Card.Description>
               </Card.Content>
             </Card>
@@ -83,14 +88,19 @@ const Home = ({ }) => {
         <div className="block-project">
         <Link to="/ApiGithub">
           <Card className="card-div">
-            <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
+            <Image src={github} wrapped ui={false} />
             <Card.Content>
-              <Card.Header>Matthew</Card.Header>
+              <Card.Header>Github Application</Card.Header>
               <Card.Meta>
-                <span className='date'>Joined in 2015</span>
+                <span className='date'>June 2021</span>
               </Card.Meta>
               <Card.Description>
-                Matthew is a musician living in Nashville.
+              <ul>
+                <li>Idea to provide an application to the gitHub repositories</li>
+                <li>use of gitHubAPI </li>
+              </ul>
+              <br/>
+                    <span className="technos">Technos =&gt; React/Redux, Axios</span>
               </Card.Description>
             </Card.Content>
           </Card>
