@@ -95,8 +95,10 @@ const Home = ({ }) => {
                 <span className='date'>June 2021</span>
               </Card.Meta>
               <Card.Description>
+              <span className="title-card">API GitHub</span><br/>
               <ul>
-                <li>Idea to provide an application to the gitHub repositories</li>
+                <li>Application to access publics repositories about a specific techno</li>
+                <li>API Request</li>
                 <li>use of gitHubAPI </li>
               </ul>
               <br/>
