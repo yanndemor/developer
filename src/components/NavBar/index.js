@@ -61,6 +61,9 @@ const NavBar = () => (
           <Nav className="mr-auto">
             <NavLink to="/ApiGithub" className="navbar-brand" exact>Application Github</NavLink>
           </Nav>
+          <Nav className="mr-auto">
+            <NavLink to="/ApiWindy" className="navbar-brand" exact>Application Windy</NavLink>
+          </Nav>
         </Navbar.Collapse>
 
       </div>

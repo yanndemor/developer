@@ -1,0 +1,44 @@
+@use 'src/styles/vars';
+.container-title{
+  border-radius: vars.$border-radius;
+  background-color:rgba(197, 197, 211, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  backdrop-filter: blur( 4.5px ); 
+    -webkit-backdrop-filter: blur( 4.5px ); 
+  padding: 1.5%;
+  width:31%;
+  display:block;
+ 
+  margin: 5% auto;;
+
+}
+.container-cam{
+  #container-card{
+    border-radius: vars.$border-radius;
+    background-color:rgba(197, 197, 211, 0.233);
+    box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+    backdrop-filter: blur( 4.5px ); 
+      -webkit-backdrop-filter: blur( 4.5px ); 
+    padding: 1.5%;
+    transition: all .2s ease-in-out;
+     text-align:center;
+    &:hover{
+      transform: scale(1.1);
+      .name{
+        text-decoration: underline;
+      }
+    }
+    .content{
+      margin:2.5% 0;
+      text-align:center;
+      .name{
+     color: black; 
+     font-size: 1.2rem;
+    }
+    }
+    
+  
+  }
+  
+ 
+}
