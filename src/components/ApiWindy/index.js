@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // == Import
-
+import { slugifyTitle } from 'src/utils';
 import './apiwindy.scss';
 import { Card, Image } from 'semantic-ui-react';
 // == Composant
@@ -34,7 +34,7 @@ const ApiWindy = ({ loadCategory, camList }) => {
             
               <Image src={cam.image.current.thumbnail} wrapped ui={false} />
               <Card.Content>
-              <Link to={`/ApiWindy/cam${cam.id}`}>  
+              <Link to={`/apiWindy/${slugifyTitle(cam.title)}`}>  
                 <Card.Meta>
                   <span className="name">{cam.title}</span>
                 </Card.Meta>

@@ -7,6 +7,7 @@ import MoreResults from 'src/containers/MoreResults';
 import Counter from 'src/containers/Counter';
 import Home from 'src/components/Home';
 import ApiWindy from 'src/containers/ApiWindy';
+import Cam from 'src/containers/Cam';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import {
   Switch,
@@ -14,12 +15,12 @@ import {
   Redirect,
 } from 'react-router-dom';
 
-const Page = ({ loading, totalRepos, githubList }) => (
+const Page = ({ loading, totalRepos, githubList}) => (
   <div className="page">
     <div className="page-content">
       <Switch>
 
-        <Route path="/ApiGithub" exact> 
+        <Route path="/apiGithub" exact> 
           <div>
             <FormGitHub />
             <Counter />
@@ -40,6 +41,11 @@ const Page = ({ loading, totalRepos, githubList }) => (
             <Home />
           </div>
         </Route>
+
+        <Route path="/apiWindy/:slug" exact>
+          <Cam />
+        </Route>
+
       </Switch>
     </div>
   </div>
@@ -49,6 +55,7 @@ Page.propTypes = {
   loading: PropTypes.bool.isRequired,
   totalRepos: PropTypes.number.isRequired,
   githubList: PropTypes.array.isRequired,
+ 
 
 };
 export default Page;

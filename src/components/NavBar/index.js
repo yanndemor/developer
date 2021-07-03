@@ -59,10 +59,10 @@ const NavBar = () => (
             <NavLink to="/competences" className="navbar-brand" exact>Skills</NavLink>
           </Nav>
           <Nav className="mr-auto">
-            <NavLink to="/ApiGithub" className="navbar-brand" exact>Application Github</NavLink>
+            <NavLink to="/apiGithub" className="navbar-brand" exact>Application Github</NavLink>
           </Nav>
           <Nav className="mr-auto">
-            <NavLink to="/ApiWindy" className="navbar-brand" exact>Application Windy</NavLink>
+            <NavLink to="/apiWindy" className="navbar-brand" exact>Application Windy</NavLink>
           </Nav>
         </Navbar.Collapse>
 
