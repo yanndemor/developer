@@ -1,0 +1,45 @@
+
+@use 'src/styles/vars';.container-title{
+  border-radius: vars.$border-radius;
+  background-color:rgba(197, 197, 211, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  backdrop-filter: blur( 4.5px ); 
+    -webkit-backdrop-filter: blur( 4.5px ); 
+  padding: 1.5%;
+/*   width:31%; */
+  display: flex;
+  max-width: fit-content;
+  text-align:center;
+ margin: 5% auto;
+}
+.message{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  align-content: center;
+height:5%;
+    width:auto;
+  }
+  #alert{
+    margin-right:2%;
+    color:rgba(175, 158, 0, 0.521);
+    
+
+.info{
+  margin-left:2%;
+  margin-top:5%;
+  .text{
+    align-content: center;
+  }
+  
+  
+}
+
+
+}
+
+.container-singlecam{
+ display:flex;
+ justify-content:center;
+ padding: 5% 0;
+}
