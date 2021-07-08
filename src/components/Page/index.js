@@ -8,6 +8,7 @@ import Counter from 'src/containers/Counter';
 import Home from 'src/components/Home';
 import ApiWindy from 'src/containers/ApiWindy';
 import Cam from 'src/containers/Cam';
+import Skills from 'src/components/Skills';
 import { Dimmer, Loader } from 'semantic-ui-react';
 import {
   Switch,
@@ -46,6 +47,9 @@ const Page = ({ loading, totalRepos, githubList}) => (
           <Cam />
         </Route>
 
+        <Route path="/skills" exact>
+          <Skills />
+        </Route>
       </Switch>
     </div>
   </div>

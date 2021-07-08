@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import envolee from 'src/assets/images/image-envolee.png';
 import onthespot from 'src/assets/images/image-onthespot.png';
 import github from 'src/assets/images/image-githubApp.drawio.png';
-import arrowL from 'src/assets/images/arrow-left.drawio.png';
-import arrowLong from 'src/assets/images/arrowLong-right.drawio.png';
+/* import arrowL from 'src/assets/images/arrow-left.drawio.png';
+import arrowLong from 'src/assets/images/arrowLong-right.drawio.png'; */
 import './home.scss';
 const Home = ({ }) => {
 

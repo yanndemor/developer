@@ -56,7 +56,7 @@ const NavBar = () => (
             <NavLink to="/contact" className="navbar-brand" exact>Contact</NavLink>
           </Nav>
           <Nav className="mr-auto">
-            <NavLink to="/competences" className="navbar-brand" exact>Skills</NavLink>
+            <NavLink to="/skills" className="navbar-brand" exact>Skills</NavLink>
           </Nav>
           <Nav className="mr-auto">
             <NavLink to="/apiGithub" className="navbar-brand" exact>Application Github</NavLink>
