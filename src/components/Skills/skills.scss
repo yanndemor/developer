@@ -1,7 +1,8 @@
 @use 'src/styles/vars';
-
+.block-skills-presentation{
+  margin: 5% 0;
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color: #fff;
+  color:rgb(9, 234, 242);
   font-weight: bold;
   border-radius: vars.$border-radius;
   background-color:rgba(197, 197, 211, 0.233);
@@ -20,10 +21,11 @@
   box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
   backdrop-filter: blur( 4.5px ); 
     -webkit-backdrop-filter: blur( 4.5px ); 
-  
+  max-width: 100%;
   padding: 1% ;
   h3{
     padding: 2%;
+    text-align:center;
   }
   ul{
     padding: 2%;
@@ -32,6 +34,9 @@
      
     }
   }
+
+}
+
 }
 @media(max-width:300px){
 

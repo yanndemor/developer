@@ -1,11 +1,16 @@
+.date{
+  margin-left:1%;
+  color:coral;
+  font-weight: bold;
+}
 .content-periode{
   display:flex;
 .content-description{
   align-self:center;
- 
+ color:white;
   background-color:rgba(70, 70, 77, 0.233);
   box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
-  margin:2%;
+  padding:2%;
 }
 
 }
