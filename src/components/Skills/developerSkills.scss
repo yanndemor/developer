@@ -1,3 +1,42 @@
+@use 'src/styles/vars';
+.block-title-list{
+  .title-skills{
+  color:coral;
+  font-weight: bold;
+  font-size: 2rem;
+  margin:vars.$gutter;
+  position:relative;
+  
+  background-color:rgba(34, 34, 37, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  padding:2%;
+ 
+
+} 
+.line-title{
+    border-top: 3px solid coral;
+    display:block;
+    width:80%;
+    height:2px;
+    background: #000;
+    position:absolute;
+    
+    top:80%;
+   
+  }
+}
+
+
+.title-code{
+  margin: 5% 3% 1% 3%;
+  text-decoration:underline;
+  
+}
 .icon-code{
   margin: 10% 0 ;
 }
+ul{
+    li{
+      line-height: vars.$line-height;
+    }
+  }

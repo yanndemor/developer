@@ -1,7 +1,15 @@
+
+@use 'src/styles/vars';
 .date{
-  margin-left:1%;
   color:coral;
   font-weight: bold;
+  font-size: 2rem;
+  margin:vars.$gutter 0;
+  position:relative;
+  
+  background-color:rgba(34, 34, 37, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  padding:2%;
 }
 .content-periode{
   display:flex;
