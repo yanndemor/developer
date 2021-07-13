@@ -1,0 +1,76 @@
+@use 'src/styles/vars';
+/* .image-bg-golf{
+  background-image: url("../../assets/images/golf.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  width:10rem;
+  height:10rem;
+.image-hobbies {
+  width: 50%; 
+  height: auto;
+  object-fit: contain;
+}
+
+}
+
+.image-bg-surf{
+  background-image: url("../../assets/images/surf.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:10rem;
+  height:10rem;
+}
+.image-bg-rockClimbing{
+  background-image: url("../../assets/images/escalade.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:10rem;
+  height:10rem;
+}
+.image-bg-baseball{
+  background-image: url("../../assets/images/Baseball.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:10rem;
+  height:10rem;
+}
+ */
+ .title-hobby{
+  color:coral;
+  font-weight: bold;
+  width:86%;
+  font-size: 1rem;
+  margin:vars.$gutter;
+  position:relative;
+  
+  background-color:rgba(34, 34, 37, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  padding:2%;
+ }
+ .line-title{
+  border-top: 3px solid coral;
+  display:block;
+  width:80%;
+  height:2px;
+  background: #000;
+  position:absolute;
+  
+  top:80%;
+ 
+}
+ .image-hobbies {
+  width: 100%; 
+  height: auto;
+  object-fit: contain;
+}
+@media(min-width:350px){
+  .title-hobby{
+   
+    width:96%;
+    font-size: 2rem;
+    
+    
+
+   }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Connector from 'src/assets/images/connector.drawio.png';
 import Connector2 from 'src/assets/images/connector2.drawio.png';
+import { Divider } from 'semantic-ui-react';
 import './professionnalT.scss';
 const ProfessionnalT = ( ) => {
 
@@ -9,6 +10,7 @@ const ProfessionnalT = ( ) => {
       <div>
         <h3>Professionnal training</h3>
       </div>
+      <Divider/>
       <div>
         <ul>
           <li><span className="date">Today</span></li>

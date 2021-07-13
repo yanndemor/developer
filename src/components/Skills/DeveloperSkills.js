@@ -29,7 +29,7 @@ const DeveloperSkills = ( ) => {
           
             <h5 className="title-code">Front-end Skills</h5>
 
-              <div className="col-12 ms-3">
+              <div className="col-12 ms-lg-3">
                 <ul>
                   <li>&bull; Write Out Specifications & technical Requirements including wireframes</li>
                   <li>&bull; Development of responsive & static web page </li>
@@ -37,7 +37,7 @@ const DeveloperSkills = ( ) => {
                 </ul>
               </div>
             <h5 className="title-code">Back-end Skills</h5>
-              <div className="col-12 ms-3">
+              <div className="col-12 ms-lg-3">
                 <ul>
                   <li>&bull; DataBase & its documentations creation </li>
                   <li>&bull; Development of components to access the database</li>

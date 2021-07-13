@@ -2,6 +2,8 @@ import React from 'react';
 import { Tab,  Grid } from 'semantic-ui-react';
 import ProfessionnalT from 'src/components/Skills/ProfessionnalT';
 import DeveloperSkills from 'src/components/Skills/DeveloperSkills';
+import Hobbies from 'src/components/Skills/Hobbies';
+
 import './skills.scss';
 /* const panes = [
 
@@ -32,7 +34,7 @@ const SkillsTabs = () => {
           <ProfessionnalT/>
         </div>
         <div className="tab-pane fade" id="v-pills-developerSkills" role="tabpanel" aria-labelledby="v-pills-developerSkills-tab"><DeveloperSkills /></div>
-        <div className="tab-pane fade" id="v-pills-hobbies" role="tabpanel" aria-labelledby="v-pills-hobbies-tab">...</div>
+        <div className="tab-pane fade" id="v-pills-hobbies" role="tabpanel" aria-labelledby="v-pills-hobbies-tab"><Hobbies /></div>
         
       </div>
     </div>

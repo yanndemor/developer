@@ -3,7 +3,7 @@
 .date{
   color:coral;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   margin:vars.$gutter 0;
   position:relative;
   
@@ -15,10 +15,20 @@
   display:flex;
 .content-description{
   align-self:center;
- color:white;
+  color:white;
   background-color:rgba(70, 70, 77, 0.233);
   box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
   padding:2%;
 }
 
+}
+@media(min-width:350px){
+  .title-hobby{
+   
+   
+    font-size: 2rem;
+    
+    
+
+   }
 }
