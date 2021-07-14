@@ -8,11 +8,15 @@ import './textArea.scss';
 // == Composant
 const TextArea = ({
   value,
+  name,
+  type,
   manageChange,
+  placeholder,
 }) => {
   const handleChange = (evt) => {
-    manageChange(evt.target.value, value);
+    manageChange(evt.target.value, name);
   };
+  const inputId = `field-${name}`;
   return (
     <div>
       <textarea
@@ -20,10 +24,10 @@ const TextArea = ({
         value={value}
         onChange={handleChange}
         // infos de base
-        id="msg"
-        type="text"
+        id={inputId}
+        type={type}
         className="textarea-field"
-        placeholder="message"
+        placeholder={placeholder}
 
       />
     </div>
@@ -34,13 +38,16 @@ TextArea.propTypes = {
   /** text used as value for the input */
   value: PropTypes.string,
   /** type of the input */
-
+  type: PropTypes.string,
+  placeholder: PropTypes.string.isRequired,
   manageChange: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 // Valeurs par défaut pour les props
 TextArea.defaultProps = {
   value: '',
+  type: 'text',
 };
 
 // == Export
