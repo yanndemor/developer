@@ -1,16 +1,21 @@
 
 @use 'src/styles/vars';
 .date{
-  color:coral;
-  font-weight: bold;
-  font-size: 1rem;
-  margin:vars.$gutter 0;
-  position:relative;
+
+    color:coral;
+    font-weight: bold;
+    width:86%;
+    font-size: 2rem;
+    margin:vars.$gutter;
+    
+    
+    background-color:rgba(34, 34, 37, 0.233);
+    box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+    padding:3%;
+}   
+
   
-  background-color:rgba(34, 34, 37, 0.233);
-  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
-  padding:2%;
-}
+
 .content-periode{
   display:flex;
 .content-description{
@@ -20,7 +25,12 @@
   box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
   padding:2%;
 }
-
+.connector{
+  margin:15%;
+}
+.connector2{
+  margin:15%;
+}
 }
 @media(min-width:350px){
   .title-hobby{

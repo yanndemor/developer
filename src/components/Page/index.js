@@ -10,7 +10,9 @@ import ApiWindy from 'src/containers/ApiWindy';
 import Cam from 'src/containers/Cam';
 import Skills from 'src/components/Skills';
 import Contact from 'src/components/Contact';
+
 /* import { Dimmer, Loader } from 'semantic-ui-react'; */
+
 import {
   Switch,
   Route,

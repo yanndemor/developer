@@ -5,3 +5,7 @@ dist/
 Thumbs.db
 
 yarn-error.log
+
+contact/index.js
+
+middlewares/contactMiddleware.js
