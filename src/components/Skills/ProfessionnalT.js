@@ -13,7 +13,7 @@ const ProfessionnalT = () => (
     <Divider />
     <div>
       <ul>
-        <li><span className="date">Today</span></li>
+        <li><h4 className="date">Today<span className="line-title" /></h4></li>
         <div className="content-periode">
           <div>
             <img src={Connector} alt="connecteur" className="connector" />
@@ -23,7 +23,7 @@ const ProfessionnalT = () => (
           </div>
         </div>
 
-        <li><span className="date">Mai 2021</span></li>
+        <li><h4 className="date">Mai 2021<span className="line-title" /></h4></li>
 
         <div className="content-periode">
           <div>
@@ -34,7 +34,7 @@ const ProfessionnalT = () => (
           </div>
         </div>
 
-        <li><span className="date">October 2021</span></li>
+        <li><h4 className="date">October 2021<span className="line-title" /></h4></li>
         <div className="content-periode">
           <div>
             <img src={Connector2} alt="connecteur" className="connector2" />
@@ -44,7 +44,7 @@ const ProfessionnalT = () => (
           </div>
         </div>
 
-        <li><span className="date">October 2016</span></li>
+        <li><h4 className="date">October 2016<span className="line-title" /></h4></li>
         <div className="content-periode">
           <div>
             <img src={Connector2} alt="connecteur" className="connector2" />
@@ -54,7 +54,7 @@ const ProfessionnalT = () => (
           </div>
         </div>
 
-        <li><span className="date">Mai 2008</span></li>
+        <li><h4 className="date">Mai 2008<span className="line-title" /></h4></li>
         <div className="content-periode">
           <div>
             <img src={Connector2} alt="connecteur" className="connector2" />
@@ -63,7 +63,7 @@ const ProfessionnalT = () => (
             <p>Industrial Drafter : Solidworks CAD Software</p>
           </div>
         </div>
-        <li><span className="date">October 2006</span></li>
+        <li><h4 className="date">October 2006<span className="line-title" /></h4></li>
         <div className="content-periode">
           <div>
             <img src={Connector2} alt="connecteur" className="connector2" />
@@ -72,7 +72,7 @@ const ProfessionnalT = () => (
             <p>MASTER Degree Genius of Materials, specialized in Polymers Materials</p>
           </div>
         </div>
-        <li><span className="date">September 2002</span></li>
+        <li><h4 className="date">September 2002<span className="line-title" /></h4></li>
         <div className="content-periode">
           <div>
             <img src={Connector2} alt="connecteur" className="connector2" />
@@ -81,7 +81,7 @@ const ProfessionnalT = () => (
             <p>Brevet of Superior Technicien in Plastics</p>
           </div>
         </div>
-        <li><span className="date">Far away in the past</span></li>
+        <li><h4 className="date">Far away in the past<span className="line-title" /></h4></li>
       </ul>
     </div>
   </>

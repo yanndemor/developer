@@ -2,18 +2,28 @@
 @use 'src/styles/vars';
 .date{
 
-    color:coral;
-    font-weight: bold;
-    width:86%;
-    font-size: 2rem;
-    margin:vars.$gutter;
-    
-    
-    background-color:rgba(34, 34, 37, 0.233);
-    box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
-    padding:3%;
-}   
+  color:coral;
+  font-weight: bold;
+  width:86%;
+  font-size: 1rem;
+  margin:vars.$gutter;
+  position:relative;
 
+ position:relative;
+  background-color:rgba(34, 34, 37, 0.233);
+  box-shadow: 0 8px 32px 0 rgba(18, 27, 145, 0.37);
+  padding:2%;
+}   
+.line-title{
+  border-top: 3px solid coral;
+  display:block;
+  width:80%;
+  height:2px;
+  background: #000;
+  position:absolute;
+  
+  top:80%;
+}
   
 
 .content-periode{
@@ -33,11 +43,12 @@
 }
 }
 @media(min-width:350px){
-  .title-hobby{
+  .date{
    
-   
+    width:96%;
     font-size: 2rem;
-    
+    line-height:1.5em;
+
     
 
    }
