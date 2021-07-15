@@ -10,8 +10,6 @@ import TextArea from './TextArea'; */
 import './contact.scss';
 
 const Contact = () => {
-  
-
   const sendEmail = (e) => {
     e.preventDefault(); // Prevents default refresh by the browser
     /*  handleMail(); */
@@ -110,19 +108,19 @@ const Contact = () => {
 };
 Contact.propTypes = {
   /** value for the firstname */
-  firstname: PropTypes.string.isRequired,
+/*   firstname: PropTypes.string.isRequired, */
   /** value for the lastname */
-  lastname: PropTypes.string.isRequired,
+/*   lastname: PropTypes.string.isRequired, */
   /** value for the emailRegister */
-  message: PropTypes.string.isRequired,
-  email: PropTypes.string.isRequired,
+/*   message: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired, */
   /** called when onChange event is received by an input, two parameters :
    * - new value
    * - name
    */
-  changeField: PropTypes.func.isRequired,
+/*   changeField: PropTypes.func.isRequired, */
   /** value for the phoneNumber */
-  phoneNumber: PropTypes.string.isRequired,
+/*   phoneNumber: PropTypes.string.isRequired, */
 
 };
 export default Contact;
